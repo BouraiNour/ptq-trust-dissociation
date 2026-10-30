@@ -1,0 +1,5 @@
+defaults: base.yaml
+recipe_name: "AWQ_W4"
+model_id: "Qwen/Qwen2.5-7B-Instruct-AWQ"
+quantization: "awq"
+device_map: "cuda:0"

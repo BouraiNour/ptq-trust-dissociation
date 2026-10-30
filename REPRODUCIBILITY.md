@@ -1,8 +1,12 @@
 # Reproducibility Guide
 
 ## Hardware Requirements
-- One 24 GB GPU (e.g., A10, L4, RTX 3090) for AWQ and NF4.
-- Two GPUs or a 40+ GB VRAM GPU for FP16.
+
+This pipeline was developed and validated on **2× NVIDIA T4 (16 GB each)**.
+
+- **FP16:** Requires ~2× T4 or a single GPU with 40+ GB VRAM (A100/H100). The 2× T4 setup used `device_map="auto"` to shard the model across both GPUs.
+- **NF4:** Runs on a single T4 (16 GB). We used `device_map="auto"`; no sharding was necessary.
+- **AWQ_W4:** Runs on a single T4 (16 GB). We forced `device_map="cuda:0"` to avoid OOM.
 
 ## Environment Setup
 ```bash

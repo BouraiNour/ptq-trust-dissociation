@@ -2,8 +2,6 @@
 
 This directory is intended for local copies of large datasets (e.g., MedQA). 
 
-The pre-computed outputs are stored in `results/dissociation_1000_final.csv`. 
-
 To regenerate the data from scratch:
 1. Ensure your HuggingFace environment is authenticated.
 2. Run `bash scripts/run_inference.sh`.

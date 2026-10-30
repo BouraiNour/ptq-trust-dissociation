@@ -1,0 +1,5 @@
+defaults: base.yaml
+recipe_name: "NF4"
+model_id: "Qwen/Qwen2.5-7B-Instruct"
+quantization: "nf4"
+device_map: "auto"

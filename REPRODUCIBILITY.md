@@ -16,5 +16,5 @@ To reproduce the inference and analysis from scratch:
 bash scripts/reproduce_all.sh
 ```
 
-#Determinism
+# Determinism
 The analysis script uses seed=42 for all random sampling and bootstrapping. While exact float reductions may vary slightly across different GPU architectures (which can shift CI bounds by the third decimal place), the point estimates and significance levels are stable and reproducible.

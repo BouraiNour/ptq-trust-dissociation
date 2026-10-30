@@ -60,7 +60,7 @@ def run_analysis(config_path):
     seed = config["seed"]
     n_boot = config["bootstrap_resamples"]
     out_dir = config["output_dir"]
-    in_csv = os.path.join(out_dir, "dissociation_1000_final.csv")
+    in_csv = os.path.join(out_dir, "paired_medqa_quantization.csv")
     
     np.random.seed(seed)
     torch.manual_seed(seed)

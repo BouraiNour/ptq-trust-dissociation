@@ -1,0 +1,5 @@
+defaults: base.yaml
+recipe_name: "FP16"
+model_id: "Qwen/Qwen2.5-7B-Instruct"
+quantization: "fp16"
+device_map: "auto"

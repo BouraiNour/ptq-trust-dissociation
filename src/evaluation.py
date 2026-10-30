@@ -38,7 +38,7 @@ def _save_checkpoint(path, rows):
 def run_inference(config_path):
     config = load_config(config_path)
     recipe = config["recipe_name"]
-    out_csv = os.path.join(config["output_dir"], "dissociation_1000_final.csv")
+    out_csv = os.path.join(config["output_dir"], "paired_medqa_quantization.csv")
     os.makedirs(config["output_dir"], exist_ok=True)
     
     print(f"\n{'='*70}\nRECIPE: {recipe}\n{'='*70}")

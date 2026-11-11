@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# local regeneration / control outputs (copy final CSVs into data/per_item/ deliberately)
+runs/
+hf_ds_cache*/

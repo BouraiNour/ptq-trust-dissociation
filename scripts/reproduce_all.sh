@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 if [ "$1" == "--with-inference" ]; then
-    bash scripts/install_env_kaggle.sh
+    bash scripts/install_env.sh
     OUT=runs bash scripts/run_inference.sh
     D=runs
 else

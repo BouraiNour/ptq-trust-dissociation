@@ -1,0 +1,15 @@
+# Generation (GPU). Exact versions used for the released data; see data/per_item/run_info_*.json.
+# transformers 4.x is REQUIRED: AutoAWQ 0.2.9 and bitsandbytes NF4 loading were verified on 4.51.3 only
+# (transformers 5.x needs the `gptqmodel` AWQ backend and `bitsandbytes>=0.46.1`, a different stack).
+# torch is taken from the image (Kaggle: 2.11.0+cu128); installing a different torch may change numerics.
+transformers==4.51.3
+tokenizers==0.21.0
+huggingface-hub==0.36.0
+datasets==3.2.0
+accelerate==1.15.0
+bitsandbytes==0.50.2
+autoawq==0.2.9
+numpy==2.2.6
+scipy==1.15.3
+pandas>=2.0
+tqdm>=4.66

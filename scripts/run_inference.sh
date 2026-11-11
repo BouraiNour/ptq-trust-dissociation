@@ -1,3 +1,4 @@
+#!/bin/bash
 set -e
 OUT=${OUT:-runs}
 mkdir -p "$OUT"

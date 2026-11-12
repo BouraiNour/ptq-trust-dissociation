@@ -60,16 +60,7 @@ make test        # Runs 51 tests (parsing, metrics, data consistency)
 make analysis    # Runs 20,000-resample paired bootstrap (seed 42) -> results/
 make figure      # Regenerates the plots
 
-## Citation
 
-```bibtex
-@inproceedings{bourai2026ptq,
-  title={Calibration-Faithfulness Dissociation Under 4-bit Quantization: Evidence from Qwen2.5-7B on MedQA},
-  author={Bourai, Nour El Houda and Djebbar, A. and Merouani, H. F.},
-  booktitle={CAIA'26},
-  year={2026}
-}
-```
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
